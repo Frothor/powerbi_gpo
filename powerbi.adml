@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName />
+  <description />
+  <resources>
+    <stringTable>
+      <!-- Category -->
+      <string id="PowerBIDesktop">Power BI Desktop Settings</string>
+
+      <!-- EnableCustomVisuals -->
+      <string id="EnableCustomVisuals">Enable Custom Visuals</string>
+      <string id="EnableCustomVisuals_Help">Allows users to import and use custom visuals in Power BI Desktop. Enabling this policy sets the registry value 'EnableCustomVisuals' to 1.</string>
+
+      <!-- EnableUncertifiedVisuals -->
+      <string id="EnableUncertifiedVisuals">Enable Uncertified Visuals</string>
+      <string id="EnableUncertifiedVisuals_Help">Allows users to use visuals not certified by Microsoft. Enabling this policy sets the registry value 'EnableUncertifiedVisuals' to 1.</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

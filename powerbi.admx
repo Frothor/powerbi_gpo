@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <policyNamespaces>
+    <target prefix="PowerBIDesktop" namespace="Microsoft.PowerBI.Desktop" />
+    <using prefix="Windows" namespace="Microsoft.Policies.Windows" />
+  </policyNamespaces>
+  <resources minRequiredRevision="1.0" />
+  <categories>
+    <category name="PowerBIDesktop" displayName="$(string.PowerBIDesktop)" />
+  </categories>
+  <policies>
+    <!-- Enable Custom Visuals -->
+    <policy name="EnableCustomVisuals" class="Machine" displayName="$(string.EnableCustomVisuals)" explainText="$(string.EnableCustomVisuals_Help)" key="SOFTWARE\Policies\Microsoft\Power BI Desktop" valueName="EnableCustomVisuals">
+      <parentCategory ref="PowerBIDesktop" />
+      <supportedOn ref="Windows:SUPPORTED_Windows10" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <!-- Enable Uncertified Visuals -->
+    <policy name="EnableUncertifiedVisuals" class="Machine" displayName="$(string.EnableUncertifiedVisuals)" explainText="$(string.EnableUncertifiedVisuals_Help)" key="SOFTWARE\Policies\Microsoft\Power BI Desktop" valueName="EnableUncertifiedVisuals">
+      <parentCategory ref="PowerBIDesktop" />
+      <supportedOn ref="Windows:SUPPORTED_Windows10" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+  </policies>
+</policyDefinitions>
